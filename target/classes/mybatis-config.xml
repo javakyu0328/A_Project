@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+  <!-- MyBatis 설정 내용 -->
+  <settings>
+    <setting name="cacheEnabled" value="true"/>
+    <setting name="lazyLoadingEnabled" value="false"/>
+    <!-- 필요에 따라 추가 설정 -->
+  </settings>
+
+  <typeAliases>
+    <typeAlias alias="BoardDAO" type="com.example.dao.BoardDAO"/>
+    <typeAlias alias="BoardDAOImpl" type="com.example.dao.BoardDAOImpl"/>
+    <typeAlias alias="BoardVO" type="com.example.domain.BoardVO"/>
+    <typeAlias alias="BoardService" type="com.example.service.BoardService"/>
+    <typeAlias alias="BoardServiceImpl" type="com.example.service.BoardServiceImpl"/>
+    <!-- 필요한 타입 별칭 설정 -->
+  </typeAliases>
+
+</configuration>
