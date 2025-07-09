@@ -13,46 +13,47 @@ Spring MVC, JSP, Oracle DB 기반의 게시판 프로젝트입니다.
 
 ## 📂 프로젝트 구조
 
-SpringMVC/
-├── src/
-│ ├── main/
-│ │ ├── java/
-│ │ │ └── com/example/
-│ │ │ ├── controller/
-│ │ │ │ ├── BoardController.java
-│ │ │ │ └── HomeController.java
-│ │ │ ├── dao/
-│ │ │ │ ├── BoardDAO.java
-│ │ │ │ └── BoardDAOImpl.java
-│ │ │ ├── domain/
-│ │ │ │ └── BoardVO.java
-│ │ │ └── service/
-│ │ │ ├── BoardService.java
-│ │ │ └── BoardServiceImpl.java
-│ │ ├── resources/
-│ │ │ ├── mappers/
-│ │ │ │ └── boardMapper.xml
-│ │ │ ├── META-INF/
-│ │ │ ├── log4j.xml
-│ │ │ ├── log4j2.xml
-│ │ │ ├── log4jdbc.log4j2.properties
-│ │ │ └── mybatis-config.xml
-│ ├── test/
-│ │ ├── java/
-│ │ └── resources/
-├── Deployed Resources/
-│ └── webapp/
-│ ├── resources/
-│ └── WEB-INF/
-│ ├── classes/
-│ ├── spring/
-│ └── views/
-│ └── board/
-│ ├── list.jsp
-│ └── write.jsp
-│ └── home.jsp
-│ └── web.xml
-├── pom.xml
+SpringMVC
+├─ src
+│  ├─ main
+│  │  ├─ java
+│  │  │  └─ com
+│  │  │     └─ example
+│  │  │        ├─ controller
+│  │  │        │  ├─ BoardController.java
+│  │  │        │  └─ HomeController.java
+│  │  │        ├─ dao
+│  │  │        │  ├─ BoardDAO.java
+│  │  │        │  └─ BoardDAOImpl.java
+│  │  │        ├─ domain
+│  │  │        │  └─ BoardVO.java
+│  │  │        └─ service
+│  │  │           ├─ BoardService.java
+│  │  │           └─ BoardServiceImpl.java
+│  │  └─ resources
+│  │     ├─ mappers
+│  │     │  └─ boardMapper.xml
+│  │     ├─ META-INF
+│  │     ├─ log4j.xml
+│  │     ├─ log4j2.xml
+│  │     ├─ log4jdbc.log4j2.properties
+│  │     └─ mybatis-config.xml
+│  └─ test
+│     ├─ java
+│     └─ resources
+├─ Deployed Resources
+│  └─ webapp
+│     ├─ resources
+│     └─ WEB-INF
+│        ├─ classes
+│        ├─ spring
+│        ├─ views
+│        │  └─ board
+│        │     ├─ list.jsp
+│        │     ├─ write.jsp
+│        │     └─ home.jsp
+│        └─ web.xml
+└─ pom.xml
 
 ---
 
@@ -116,9 +117,6 @@ MyBatis 매퍼에서 CLOB 타입 파라미터는 jdbcType=CLOB으로 지정 필�
 
 ---
 
-📋 수정사항
-
----
 
 🙋‍♂️ 개발자 정보  
 이름: 최정규  
@@ -135,3 +133,9 @@ MyBatis 매퍼에서 CLOB 타입 파라미터는 jdbcType=CLOB으로 지정 필�
 ![alt text](2.list.png)
 3. 글 작성
 ![alt text](3.write.png)
+
+---
+
+📋 수정사항
+
+---
