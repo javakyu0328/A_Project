@@ -12,7 +12,7 @@ Spring MVC, JSP, Oracle DB 기반의 게시판 프로젝트입니다.
 ---
 
 ## 📂 프로젝트 구조
-
+```
 SpringMVC
 ├─ src
 │  ├─ main
@@ -54,7 +54,7 @@ SpringMVC
 │        │     └─ home.jsp
 │        └─ web.xml
 └─ pom.xml
-
+```
 ---
 
 ## ⚙️ 기술 스택
