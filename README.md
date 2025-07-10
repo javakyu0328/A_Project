@@ -94,21 +94,19 @@ CREATE TABLE tbl_board (
 CREATE SEQUENCE myBoard_seq START WITH 1 INCREMENT BY 1 NOCACHE NOCYCLE;
 ```
 
-src/main/resources/mappers/boardMapper.xml에서 SQL 매퍼 확인 (insert 문에 시퀀스 myBoard_seq.nextval 사용)
+- src/main/resources/mappers/boardMapper.xml에서 SQL 매퍼 확인 (insert 문에 시퀀스 myBoard_seq.nextval 사용)
 
-web.xml 파일에 인코딩 필터(CharacterEncodingFilter) 설정 확인 (UTF-8)
+- web.xml 파일에 인코딩 필터(CharacterEncodingFilter) 설정 확인 (UTF-8)
 
-톰캣 server.xml에서 <Connector> 태그에 URIEncoding="UTF-8" 추가 권장
+- Maven으로 빌드 후 톰캣에서 프로젝트 배포 및 실행
 
-Maven으로 빌드 후 톰캣에서 프로젝트 배포 및 실행
-
-브라우저에서 다음 경로 접속
+- 브라우저에서 다음 경로 접속
 
 ```
 http://localhost:8088/board/list
 ```
 
- 참고사항  
+ <참고사항>  
 한글 깨짐 문제 발생 시 JSP, Spring 필터, 톰캣 인코딩 설정을 반드시 점검.
 
 MyBatis 매퍼에서 CLOB 타입 파라미터는 jdbcType=CLOB으로 지정 필수.
